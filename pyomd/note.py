@@ -122,7 +122,7 @@ class Note:
         if write:
             self.write()
 
-    def write(self, path: Union[Path, None] = None):
+    def write(self, path: Union[Path, None] = None, encoding='ANSI'):
         """Writes the note's content to disk.
 
         Args:
@@ -131,7 +131,7 @@ class Note:
         """
         p = self.path if path is None else path
         with open(p, "w") as f:
-            f.write(self.content)
+            f.write(self.content, encoding=encoding)
 
     @staticmethod
     def _is_md_file(path: Path):
