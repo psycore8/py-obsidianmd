@@ -16,6 +16,21 @@ note.append('Some modifications')
 note.write(encoding='UTF-8')
 ```
 
+### Installation Instructions
+
+Build from github:
+
+```shell
+pip install git+https://github.com/psycore8/py-obsidianmd.git
+```
+
+Import sources:
+
+```python
+from pyomd import Note
+from pyomd.metadata import MetadataType
+```
+
 ## Presentation video
 
 [![Watch the video](https://img.youtube.com/vi/gRPBAKiu37Y/hqdefault.jpg)](https://www.youtube.com/watch?v=gRPBAKiu37Y)
