@@ -6,7 +6,15 @@ See the [full documentation](https://selimrbd.github.io/py-obsidianmd/)
 
 :warning: **Consider backing up your vault** before using the library, to avoid any risk of data loss. You can test the library on this [example vault](https://github.com/selimrbd/example-vault)
 
+## Fork Notes
 
+Added an encoding parameter to write() function. Usage:
+
+```python
+note = Note(note_path)
+note.append('Some modifications')
+note.write(encoding='UTF-8')
+```
 
 ## Presentation video
 
