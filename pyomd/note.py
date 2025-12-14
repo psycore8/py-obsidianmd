@@ -130,8 +130,8 @@ class Note:
                 path to the note. If None, overwrites the current note content.
         """
         p = self.path if path is None else path
-        with open(p, "w") as f:
-            f.write(self.content, encoding=encoding)
+        with open(p, "w", encoding=encoding) as f:
+            f.write(self.content)
 
     @staticmethod
     def _is_md_file(path: Path):
