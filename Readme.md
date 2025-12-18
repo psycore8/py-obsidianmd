@@ -8,13 +8,16 @@ See the [full documentation](https://selimrbd.github.io/py-obsidianmd/)
 
 ## Fork Notes
 
-Added an encoding parameter to write() function. Usage:
+- Added an encoding parameter to write() function:
 
 ```python
 note = Note(note_path)
 note.append('Some modifications')
 note.write(encoding='UTF-8')
 ```
+
+- replaced deprecated `pkg_resources` with `importlib`
+- removed `hydra` import
 
 ### Installation Instructions
 
